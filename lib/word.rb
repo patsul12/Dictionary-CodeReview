@@ -1,5 +1,3 @@
-require "pry"
-
 class Word
   attr_accessor :name, :definitions
   attr_reader :id
