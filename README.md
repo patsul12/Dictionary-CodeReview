@@ -16,7 +16,7 @@ navigate your browser [here](http://localhost:4567)
 or you can find the app on heroku
 [here](heroku)
 
-####Create By:
+####Created By:
 Patrick Sullivan
 
 [@patsul12](http://github.com/patsul12)
