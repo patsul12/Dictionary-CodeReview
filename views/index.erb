@@ -1,11 +1,16 @@
-<h1>Dictionary</h1>
-<% @words.each do |word| %>
-  <div>
-    <a href="words/<%= word.id %>">
-      <span><%= word.name %></span>
+<div class="row">
+  <% @words.each do |word| %>
+    <div class="col-lg-6 words">
+      <a href="words/<%= word.id %>">
+        <button class="btn btn-block btn-default word"><%= word.name %></button>
+      </a>
+    </div>
+  <% end %>
+</div>
+<div class="row">
+  <div class="col-lg-4 add-word">
+    <a href="/words/new">
+      <button class="btn btn-primary btn-block">Add Word</button>
     </a>
   </div>
-<% end %>
-<a href="/words/new">
-  <button class="btn btn-default">Add Word</button>
-</a>
+</div>
