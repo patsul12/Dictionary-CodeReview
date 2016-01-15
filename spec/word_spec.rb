@@ -39,6 +39,16 @@ describe Word do
       expect(test_word.definitions).to(eq([test_def]))
     end
   end
+
+  describe '#remove_definition' do
+    it 'removes a definition from the words definitions' do
+      test_word = create_word
+      test_def = create_def
+      test_word.add_definition(test_def)
+      test_word.remove_definition(test_def)
+      expect(test_word.definitions).to(eq([]))
+    end
+  end
 end
 
 def create_word

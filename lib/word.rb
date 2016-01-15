@@ -20,15 +20,19 @@ class Word
     @@words.delete(self)
   end
 
+  def add_definition(definition)
+    @definitions << definition
+  end
+
+  def remove_definition(definition)
+    @definitions.delete(definition)
+  end
+
   def self.clear
     @@words = []
   end
 
   def self.all
     @@words
-  end
-
-  def add_definition(definition)
-    @definitions << definition
   end
 end
