@@ -16,6 +16,14 @@ class Word
     @@words << self
   end
 
+  def delete
+    @@words.delete(self)
+  end
+
+  def self.clear
+    @@words = []
+  end
+
   def self.all
     @@words
   end
