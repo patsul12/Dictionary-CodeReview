@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require './lib/definition'
 require './lib/word'
+require "pry"
 
 get '/' do
   @words = Word.all
@@ -17,4 +18,9 @@ post '/words/new' do
   word = Word.new({:name => name})
   word.save
   redirect '/'
+end
+
+get '/words/:id' do
+  @word = Word.find(params[:id].to_i)
+  erb :word
 end

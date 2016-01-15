@@ -35,4 +35,12 @@ class Word
   def self.all
     @@words
   end
+
+  def self.find(id)
+    @@words.each do |word|
+      if word.id == id
+        return word
+      end
+    end
+  end
 end

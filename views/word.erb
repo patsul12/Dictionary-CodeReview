@@ -1,0 +1,8 @@
+<h1><%= @word.name %></h1>
+<% @word.definitions.each do |definition| %>
+  <div>
+    <p><%= definition.class %></p>
+    <p><%= definition.term %></p>
+    <p><%= definition.pronunciation %></p>
+  </div>
+<% end %>
