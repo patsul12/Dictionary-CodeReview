@@ -24,3 +24,14 @@
 .add-word button {
   margin-top: 20px;
 }
+
+.term {
+  background-color: #eee;
+  padding: 15px;
+  font-size: 1.5em;
+  border-radius: 15px;
+  margin: 10px;
+}
+.term p {
+  margin: 10px;
+}

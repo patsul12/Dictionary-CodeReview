@@ -6,8 +6,8 @@
   </div>
 </div>
 <% @word.definitions.each do |definition| %>
-  <div>
-    <p><%= definition.class %></p>
+  <div class="term">
+    <p><small><%= definition.class %></small></p>
     <p><%= definition.term %></p>
     <p><%= definition.pronunciation %></p>
   </div>
