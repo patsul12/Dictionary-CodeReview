@@ -1,5 +1,6 @@
 require 'rspec'
 require 'word'
+require 'definition'
 
 describe Word do
   before do
@@ -29,8 +30,21 @@ describe Word do
       expect(Word.all).to(eq([]))
     end
   end
+
+  describe '#add_definition' do
+    it 'adds a definition to the words definitions' do
+      test_word = create_word
+      test_def = create_def
+      test_word.add_definition(test_def)
+      expect(test_word.definitions).to(eq([test_def]))
+    end
+  end
 end
 
 def create_word
   Word.new({:name => 'pickle'})
+end
+
+def create_def
+  Definition.new({:term => 'an article of food that has been preserved in brine or in vinegar'})
 end

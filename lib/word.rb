@@ -27,4 +27,8 @@ class Word
   def self.all
     @@words
   end
+
+  def add_definition(definition)
+    @definitions << definition
+  end
 end
