@@ -1,1 +1,7 @@
 <h1>Dictionary</h1>
+<% @words.each do |word| %>
+  <div><%= word.name %></div>
+<% end %>
+<a href="/words/new">
+  <button class="btn btn-default">Add Word</button>
+</a>
