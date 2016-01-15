@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require './lib/definition'
 require './lib/word'
-require "pry"
+require 'pry'
 
 get '/' do
   @words = Word.all
