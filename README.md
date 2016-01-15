@@ -14,7 +14,7 @@ and start up the server with `ruby app.rb`
 navigate your browser [here](http://localhost:4567)
 
 or you can find the app on heroku
-[here](heroku)
+[here](https://sleepy-earth-2081.herokuapp.com/)
 
 ####Created By:
 Patrick Sullivan
